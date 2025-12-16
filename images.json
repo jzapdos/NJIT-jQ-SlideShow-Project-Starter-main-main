@@ -1,82 +1,64 @@
 {
     "images": [
         {
-            "imgPath": "img/places/australia.jpg",
-            "imgLocation": "Australia",
-            "description": "Loch Ard Gorge",
-            "date": "01/01/2016"
+            "imgPath": "img/food/burger.jpg",
+            "imgFood": "Burger",
+            "description": "Meat in a bun with some toppings.",
+            "eatTime": "5 minutes"
         },
         {
-            "imgPath": "img/places/austria.jpg",
-            "imgLocation": "Austria",
-            "description": "Austrian chapel",
-            "date": "01/02/2016"
+            "imgPath": "img/food/chicken.jpg",
+            "imgFood": "Chicken Cutlet",
+            "description": "Breaded chicken.",
+            "eatTime": "7 minutes"
         },
         {
-            "imgPath": "img/places/france.jpg",
-            "imgLocation": "Paris",
-            "description": "Eiffel Tower",
-            "date": "01/03/2016"
+            "imgPath": "img/food/pizza.jpg",
+            "imgFood": "Pizza",
+            "description": "Dough with sauce and chesse.",
+            "eatTime": "8 minutes"
         },
         {
-            "imgPath": "img/places/greece.jpg",
-            "imgLocation": "Greece",
-            "description": "Greek coastline",
-            "date": "01/04/2016"
+            "imgPath": "img/food/hotdog.jpg",
+            "imgFood": "Hot Dog",
+            "description": "I dont what kind of meat in between a bun.",
+            "eatTime": "1 minute 30 seconds"
         },
         {
-            "imgPath": "img/places/hungary.jpg",
-            "imgLocation": "Hungary",
-            "description": "Budapest skyline",
-            "date": "01/05/2016"
+            "imgPath": "img/food/pancake.jpg",
+            "imgFood": "Pancakes",
+            "description": "Batter that is cooked in a pan.",
+            "eatTime": "9 minutes"
         },
         {
-            "imgPath": "img/places/india.jpg",
-            "imgLocation": "India",
-            "description": "Taj Mahal",
-            "date": "01/06/2016"
+            "imgPath": "img/food/cake.jpg",
+            "imgFood": "Cake",
+            "description": "Batter that is baked in an oven.",
+            "eatTime": "2 minutes"
         },
         {
-            "imgPath": "img/places/italy.jpg",
-            "imgLocation": "Italy",
-            "description": "Venice",
-            "date": "01/07/2016"
+            "imgPath": "img/food/taco.jpg",
+            "imgFood": "Taco",
+            "description": "Tortilla with meat and cheese and other toppings.",
+            "eatTime": "30 seconds"
         },
         {
-            "imgPath": "img/places/japan.jpg",
-            "imgLocation": "Japan",
-            "description": "Hirosaki Castle",
-            "date": "01/08/2016"
+            "imgPath": "img/food/burrito.jpg",
+            "imgFood": "Burrito",
+            "description": "Meat and cheese and other toppings wrapped in a tortilla.",
+            "eatTime": "2 minutes"
         },
         {
-            "imgPath": "img/places/korea.jpg",
-            "imgLocation": "South Korea",
-            "description": "Seoul",
-            "date": "01/09/2016"
+            "imgPath": "img/food/steak.jpg",
+            "imgFood": "Steak",
+            "description": "Piece of meat that is grilled to a medium rare.",
+            "eatTime": "7 minutes"
         },
         {
-            "imgPath": "img/places/norway.jpg",
-            "imgLocation": "Norway",
-            "description": "Countryside mountains",
-            "date": "01/10/2016"
-        },
-        {
-            "imgPath": "img/places/switzerland.jpg",
-            "imgLocation": "Switzerland",
-            "description": "Lake castle",
-            "date": "01/11/2016"
-        },
-        {
-            "imgPath": "img/places/thailand.jpg",
-            "imgLocation": "Thailand",
-            "description": "Beachline",
-            "date": "01/12/2016"
-        },
-        {
-            "imgPath": "img/places/turkey.jpg",
-            "imgLocation": "Turkey",
-            "description": "Istanbul",
-            "date": "01/13/2016"
+            "imgPath": "img/food/lemon.jpg",
+            "imgFood": "Chicken Francese",
+            "description": "Chicken Cutlet drenched in a lemon sauce.",
+            "eatTime": "4 minutes"
         }
   ]
 }
