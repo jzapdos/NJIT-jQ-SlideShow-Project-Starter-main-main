@@ -42,7 +42,11 @@ function fetchJSON () {
     dataType: "json",
     success: function(data) {
       console.log(data.images)
-      
+      mImages = data.images;
+      swapPhoto()
+    },
+    error: function(err) {
+      console.error("Error loading JSON", err)
     }
   })
 }
@@ -52,6 +56,10 @@ function swapPhoto () {
   // Access mImages[mCurrentIndex] to update the image source and details
   // Update the #photo element's src attribute with the current image's path
   // Update the .location, .description, and .date elements with the current image's details
+  $("#photo").attr("src", mImages[mCurrentIndex].imgPath)
+  $(".location").text(mImages[mCurrentIndex].location)
+  $(".description").attr("src", mImages[mCurrentIndex].description)
+  $(".date").text(mImages[mCurrentIndex].date)
 }
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
