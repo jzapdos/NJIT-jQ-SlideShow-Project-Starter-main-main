@@ -16,11 +16,11 @@ $(".moreIndicator").on("click", function() {
   $(".details").slideToggle()
 })
 
-$("nextPhoto").on("click", function() {
+$("#nextPhoto").on("click", function() {
   showNextPhoto()
 })
 
-$("prevPhoto").on("click", function() {
+$("#prevPhoto").on("click", function() {
   showPrevPhoto()
 })
   // Select the "Next Photo" button and add a click event to call showNextPhoto
@@ -53,25 +53,31 @@ function fetchJSON () {
 
 // Function to swap and display the next photo in the slideshow
 function swapPhoto () {
-  // Access mImages[mCurrentIndex] to update the image source and details
-  // Update the #photo element's src attribute with the current image's path
-  // Update the .location, .description, and .date elements with the current image's details
   $("#photo").attr("src", mImages[mCurrentIndex].imgPath)
-  $(".location").text(mImages[mCurrentIndex].location)
-  $(".description").attr("src", mImages[mCurrentIndex].description)
-  $(".date").text(mImages[mCurrentIndex].date)
+  $(".imgFood").text("Food: " + mImages[mCurrentIndex].imgFood)
+  $(".description").text("Description: " + mImages[mCurrentIndex].description)
+  $(".eatTime").text("Eat Time: " + mImages[mCurrentIndex].eatTime)
 }
-
 // Advances to the next photo, loops to the first photo if the end of array is reached
 function showNextPhoto () {
-  // Increment mCurrentIndex and call swapPhoto()
-  // Ensure it loops back to the beginning if mCurrentIndex exceeds array length
+  if (mImages.length === 0) return
+  mCurrentIndex++
+  if (mCurrentIndex >= mImages.length) {
+    mCurrentIndex = 0
+  }
+  swapPhoto()
 }
 
 // Goes to the previous photo, loops to the last photo if mCurrentIndex goes negative
 function showPrevPhoto () {
   // Decrement mCurrentIndex and call swapPhoto()
   // Ensure it loops to the end if mCurrentIndex is less than 0
+  if(mImages.length === 0) return;
+  mCurrentIndex--
+  if(mCurrentIndex < 0){
+    mCurrentIndex = mImages.length - 1
+  }
+  swapPhoto()
 }
 
 // Starter code for the timer function
@@ -79,4 +85,8 @@ function startTimer () {
   // Create a timer to automatically call `showNextPhoto()` every mWaitTime milliseconds
   // Consider using setInterval to achieve this functionality
   // Hint: Make sure only one timer runs at a time
+
+  mTimer = setInterval(() => {
+    showNextPhoto()
+  }, mWaitTime);
 }
